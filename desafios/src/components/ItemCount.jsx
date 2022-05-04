@@ -1,36 +1,40 @@
 import React, { useState } from 'react'
 
-const ItemCount = (stock) => {
+const ItemCount = ({stock, initial, onAdd}) => {
+    const [count,setCount]= useState(initial);
 
-    const [contador,setContador]= useState(1)
-    var cantidad = {stock} 
-    var prueba = cantidad - 1 
-    console.log(cantidad)
-    
-    console.log (prueba)
-
-
-  function restar(params) {
-      if (contador > 1){
-         setContador(contador -1)
+    const Restar =() => {
+      if (count === 1){
+         console.log('NO PUEDE SEGUIR RESTANDO')
+      }else{
+        setCount(count - 1);
       }
-  }
+  };
 
-  function sumar(params) {
-      setContador(contador +1)
+  const Sumar = () => {
+    if (count >= stock) {
+      console.log('NO HAY MAS PRODUCTOS')
+    } else {
+      setCount(count + 1);
+    }
+  };
+
+  const agregarCarrito = () => {
+    onAdd(count)
   }
 
   return (
-    <div className='d-flex justify-content-evenly w-100 m-2'>
+    <>
     
-        <button onClick={restar}>-</button>
-        <h5> {contador}</h5>
-        <button onClick={sumar}>+</button>
-        
-        
+      <button type='button'className='btn btn-secondary' onClick={Restar}>-</button>
 
+      <button type='button' className='btn btn-secondary' > {count} </button>
 
-    </div>
+      <button type='button' className='btn btn-secondary' onClick={Sumar}>+</button>
+
+      <button type='button' className='btn btn-outline-secondary my-1' onClick={agregarCarrito}> Agegrar al carrito </button>
+        
+    </>
   )
 }
 
