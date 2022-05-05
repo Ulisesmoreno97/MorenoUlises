@@ -13,11 +13,21 @@ function App() {
 
   const dataItems = [{
     id: 1,
-    title: 'Perfume 1'
+    title: 'Perfume 1',
+    price: 250,
+    pictureUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtgwf7RhaOLa5yO3v7PiviaULyk6VnfJsdbA&usqp=CAU"
   }, {
     id: 2,
-    title: 'Perfume 2'
-  }]
+    title: 'Perfume 2',
+    price: 100,
+    pictureUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtgwf7RhaOLa5yO3v7PiviaULyk6VnfJsdbA&usqp=CAU"
+    }, {
+    id: 3,
+    title: 'Perfume 3',
+    price: 150,
+    pictureUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtgwf7RhaOLa5yO3v7PiviaULyk6VnfJsdbA&usqp=CAU"
+    }
+  ]
 
   
    useEffect(() => {
@@ -43,7 +53,7 @@ function App() {
       <NavBar/>
       <div className="d-flex">
       <SideBar/>
-      <ItemListContainer/>
+      <ItemListContainer items={items}/>
       
       </div>
       

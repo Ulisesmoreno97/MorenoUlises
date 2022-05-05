@@ -3,16 +3,13 @@ import Promesa from '../promesas/Promise'
 import ItemCount from './ItemCount'
 import ItemList from './ItemList'
 
-const ItemListContainer = () => {
+const ItemListContainer = (items) => {
 
   
 
-
-
-
   return (
       
-        <ItemList/>
+        <ItemList items={items}/>
     
   )
 }

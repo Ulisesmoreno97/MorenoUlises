@@ -1,9 +1,20 @@
 import React from 'react'
 
-const Promesa = () => {
+const Promesa = (items) => {
 
   return (
-    <h1>Promesa</h1>
+    <>
+      {items.length > 0 ? (
+        items.map((item, index) => (
+          <>
+            <h1 key={index}> {item.title} </h1>
+          </>
+        ))
+
+      ) : (
+        <h1>Cargando ...</h1>
+      )}
+    </>
   )
 }
 
