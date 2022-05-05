@@ -11,7 +11,13 @@ function App() {
 
   const [items, setItems] = useState([])
 
-  const dataItems = [1,2,3,4]
+  const dataItems = [{
+    id: 1,
+    title: 'Perfume 1'
+  }, {
+    id: 2,
+    title: 'Perfume 2'
+  }]
 
   
    useEffect(() => {
@@ -25,10 +31,10 @@ function App() {
     pedido.then((res) => setItems(res))
     .catch((err) => console.log(err)) 
     
-    console.log(items)
+    
     },[])
   
-
+    console.log(items)
 
 
 
