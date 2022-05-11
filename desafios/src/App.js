@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Content1 from "./components/Content1";
 import Footer from "./components/Footer";
 import ItemListContainer from "./components/ItemListContainer";
 import NavBar from "./components/NavBar";
