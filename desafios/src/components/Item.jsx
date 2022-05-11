@@ -1,7 +1,7 @@
 import React from 'react'
 import ItemCount from './ItemCount'
 
-const Item = ({items}) => {
+const Item = (items) => {
 
   // const onAdd = (cantidad) => {
   //   console.log('SELECCIONASTE ${cantidad}')

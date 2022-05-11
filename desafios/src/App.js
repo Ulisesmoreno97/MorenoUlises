@@ -55,8 +55,9 @@ function App() {
       <SideBar/>
       <ItemListContainer items={items}/>
       
-      </div>
       
+      </div>
+      <Promesa items= {items}/>
       <Footer/>
     </div>
   );
