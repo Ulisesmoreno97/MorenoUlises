@@ -3,7 +3,7 @@ import Promesa from '../promesas/Promise'
 import ItemCount from './ItemCount'
 import ItemList from './ItemList'
 
-const ItemListContainer = (items) => {
+const ItemListContainer = ({items}) => {
 
   
 

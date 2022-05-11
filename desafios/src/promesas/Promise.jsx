@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Promesa = (items) => {
+const Promesa = ({items}) => {
 
   return (
     <>

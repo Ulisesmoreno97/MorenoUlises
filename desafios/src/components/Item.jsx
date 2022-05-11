@@ -1,18 +1,28 @@
 import React from 'react'
 import ItemCount from './ItemCount'
 
-const Item = (items) => {
+const Item = ({items}) => {
 
-  // const onAdd = (cantidad) => {
-  //   console.log('SELECCIONASTE ${cantidad}')
-  // }
+   const onAdd = (cantidad) => {
+     console.log('SELECCIONASTE ${cantidad}')
+   }
 
   return (
     <>
       {items.length > 0 ? (
         items.map((item,index) => (
         <>
-            <h1 key={index}> {item.title} </h1>
+
+     <div className={'card & ${color}'} style={{ width: "18rem" }}>
+       <img src={item.pictureUrl} className="card-img-top" alt="..." />
+       <div className="card-body">
+          <h5 className="card-title">{item.title}</h5>
+          <p>{item.id}</p>
+          <h6>{item.price}</h6>
+          <ItemCount stock={item.stock} initial={1} onAdd={onAdd} />
+          <button type='button' className='btn btn-primary my-1' > Detalle </button>         
+       </div>
+     </div>
         </>
       ))
 
@@ -23,6 +33,8 @@ const Item = (items) => {
 
   )
 }
+
+    // <h1 key={index}> {item.title} </h1>
     // <div className={'card & ${color}'} style={{ width: "18rem" }}>
     //   <img src={pictureUrl} className="card-img-top" alt="..." />
     //   <div className="card-body">

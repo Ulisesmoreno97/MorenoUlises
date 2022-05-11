@@ -3,7 +3,7 @@ import Item from './Item'
 
 
 
-const ItemList = (items) => {
+const ItemList = ({items}) => {
   return (
     
     

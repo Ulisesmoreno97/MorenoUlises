@@ -11,16 +11,19 @@ function App() {
   const [items, setItems] = useState([])
 
   const dataItems = [{
+    stock:7,
     id: 1,
     title: 'Perfume 1',
     price: 250,
     pictureUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtgwf7RhaOLa5yO3v7PiviaULyk6VnfJsdbA&usqp=CAU"
   }, {
+    stock: 15,
     id: 2,
     title: 'Perfume 2',
     price: 100,
     pictureUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtgwf7RhaOLa5yO3v7PiviaULyk6VnfJsdbA&usqp=CAU"
     }, {
+    stock: 4,
     id: 3,
     title: 'Perfume 3',
     price: 150,
@@ -56,7 +59,6 @@ function App() {
       
       
       </div>
-      <Promesa items= {items}/>
       <Footer/>
     </div>
   );
