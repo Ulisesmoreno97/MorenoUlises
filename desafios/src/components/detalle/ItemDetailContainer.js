@@ -1,16 +1,11 @@
 import React from 'react'
 
-
-
-
 const ItemDetailContainer = () => {
 
-  
 
-  return (
-      <></>
-        
     
+  return (
+    <div>ItemDetailContainer</div>
   )
 }
 

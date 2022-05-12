@@ -11,18 +11,21 @@ function App() {
   const [items, setItems] = useState([])
 
   const dataItems = [{
+    resumen: 'Breve texto sobre el producto',
     stock:7,
     id: 1,
     title: 'Perfume 1',
     price: 250,
     pictureUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtgwf7RhaOLa5yO3v7PiviaULyk6VnfJsdbA&usqp=CAU"
   }, {
+    resumen: 'Breve texto sobre el producto',
     stock: 15,
     id: 2,
     title: 'Perfume 2',
     price: 100,
     pictureUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtgwf7RhaOLa5yO3v7PiviaULyk6VnfJsdbA&usqp=CAU"
     }, {
+    resumen: 'Breve texto sobre el producto probando',
     stock: 4,
     id: 3,
     title: 'Perfume 3',

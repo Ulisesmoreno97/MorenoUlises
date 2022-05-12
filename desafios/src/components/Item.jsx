@@ -17,7 +17,7 @@ const Item = ({items}) => {
        <img src={item.pictureUrl} className="card-img-top" alt="..." />
        <div className="card-body">
           <h5 className="card-title">{item.title}</h5>
-          <p>{item.id}</p>
+          <p>{item.resumen}</p>
           <h6>{item.price}</h6>
           <ItemCount stock={item.stock} initial={1} onAdd={onAdd} />
           <button type='button' className='btn btn-primary my-1' > Detalle </button>         
