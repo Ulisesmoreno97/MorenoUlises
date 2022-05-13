@@ -1,6 +1,10 @@
 import React from 'react'
 
-const ItemDetail = () => {
+const ItemDetail = ({producto}) => {
+
+
+
+  
 
     
   return (

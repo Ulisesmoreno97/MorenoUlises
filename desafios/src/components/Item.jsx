@@ -3,8 +3,8 @@ import ItemCount from './ItemCount'
 
 const Item = ({items}) => {
 
-   const onAdd = (cantidad) => {
-     console.log('SELECCIONASTE ${cantidad}')
+   const onAdd = (count) => {
+     console.log('SELECCIONASTE ${count}')
    }
 
   return (
