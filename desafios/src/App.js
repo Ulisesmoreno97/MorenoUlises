@@ -10,9 +10,9 @@ import Rutas from "./routes/Rutas";
 function App() {
 
   return ( 
-    <div className = 'container-fluid'>
+    <>
       <Rutas/>
-    </div>
+    </>
   );
 }
 

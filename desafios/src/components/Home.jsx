@@ -8,16 +8,12 @@ const Home = () => {
   
     return (
     
-        <div className='container-fluid'>
-            <NavBar />
-            <div className="d-flex">
-                <SideBar />
-                <ItemListContainer />
-
-
-            </div>
-            <Footer />
+        <div className="d-flex">
+            <SideBar />
+            <ItemListContainer />
         </div>
+            
+        
   )
 }
 
