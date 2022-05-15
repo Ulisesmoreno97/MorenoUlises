@@ -1,23 +1,25 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import ItemDetail from './ItemDetail'
 import { getFetch } from "../../promesas/getFetch";
+import { useParams } from 'react-router-dom';
 
 
 
 
-function ItemDetailContainer() {
+function ItemDetailContainer(id) {
 
 const [producto, setProducto] = useState({})
 const [loading, setLoading] = useState(true)
-const {detalleId} = useParams()
+const  detalleId = useParams()
 
-
+  
 
 useEffect(() => {
         getFetch
-        .then(resp => setProducto(resp.find(prod => prod.id === detalleId)))
+        .then(resp => setProducto(resp.find(producto => producto.id === detalleId)))
         .finally(() => setLoading(false))
       }, [])
+      console.log(detalleId)
       console.log(producto)
       
 

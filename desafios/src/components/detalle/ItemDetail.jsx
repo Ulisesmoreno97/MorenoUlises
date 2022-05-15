@@ -8,7 +8,12 @@ const ItemDetail = ({producto}) => {
 
     
   return (
-    <div>ItemDetail</div>
+    <>
+    <div>
+      <h1>adasd</h1>
+      <h2>item + {producto.resumen}</h2>
+    </div>
+    </>
   )
 }
 

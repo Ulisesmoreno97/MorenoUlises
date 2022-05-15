@@ -3,14 +3,14 @@ import Item from './Item'
 
 
 
-const ItemList = ({productos}) => {
+const ItemList = ({producto}) => {
   return (
     
     
 
     <main className='d-flex justify-content-evenly w-100'>
       
-      <Item items={productos}/>
+      <Item items={producto}/>
       
      
     </main>

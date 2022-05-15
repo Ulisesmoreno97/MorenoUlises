@@ -5,7 +5,7 @@ import ItemList from './ItemList'
 import { getFetch } from "../promesas/getFetch";
 
 function ItemListContainer() {
-  const [productos, setProductos] = useState([])
+  const [producto, setProductos] = useState([])
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
@@ -22,7 +22,7 @@ function ItemListContainer() {
     <div>
       { loading ? <h2>Cargando...</h2>
         :
-        <ItemList productos={productos} />  
+        <ItemList producto={producto} />  
     }
     </div>
   )

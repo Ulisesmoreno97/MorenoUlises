@@ -1,5 +1,5 @@
 
-let productos = [
+let producto = [
     {
     id: 1,
     resumen: 'Breve texto sobre el producto',
@@ -24,10 +24,10 @@ let productos = [
 }]
 
 export const getFetch = new Promise((respuesta, rejected) => {
-    let url = productos.com
-    if (url === productos.com) {
+    let url = producto.com
+    if (url === producto.com) {
         setTimeout(() => {
-           respuesta(productos); 
+           respuesta(producto); 
         }, 2000);        
     } else {
         rejected('400 not found')
