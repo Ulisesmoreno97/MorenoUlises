@@ -8,7 +8,7 @@ import { useParams } from 'react-router-dom';
 
 function ItemDetailContainer(id) {
 
-const [producto, setProducto] = useState({})
+const [productos, setProducto] = useState({})
 const [loading, setLoading] = useState(true)
 const  detalleId = useParams()
 
@@ -20,14 +20,14 @@ useEffect(() => {
         .finally(() => setLoading(false))
       }, [])
       console.log(detalleId)
-      console.log(producto)
+      console.log(productos)
       
 
   return (
     <>
       { loading ? <h2>Cargando..</h2>
       :
-      <ItemDetail producto={producto}/>
+      <ItemDetail producto={productos}/>
       }
     </>
   )
