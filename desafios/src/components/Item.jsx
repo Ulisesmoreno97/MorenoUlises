@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import ItemCount from './ItemCount'
 
 const Item = ({items}) => {
@@ -21,7 +21,7 @@ const Item = ({items}) => {
           <p>{item.resumen}</p>
           <h6>{item.price}</h6>
           <ItemCount stock={item.stock} initial={1} onAdd={onAdd} />
-          <NavLink to="/ItemDetailContainer/${item.id}"  type='button' className='btn btn-primary my-1' > Detalle </NavLink>         
+          <Link to={`/ItemDetailContainer/${item.id}`}  type='button' className='btn btn-primary my-1' > Detalle </Link>         
        </div>
      </div>
         </>
