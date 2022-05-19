@@ -6,9 +6,11 @@ console.log(producto)
     <>
     <div>
       <h1>{producto.id}</h1>
-      <h2> {producto.resumen}</h2>
+      <h2>{producto.resumen}</h2>
       <h3>{producto.title}</h3>
       <p>{producto.price}</p>
+
+      
     </div>
     </>
   )
