@@ -5,7 +5,7 @@ import ItemCount from './ItemCount'
 const Item = ({items}) => {
 
    const onAdd = (count) => {
-     console.log('SELECCIONASTE ${count}')
+     console.log(`SELECCIONASTE ${count}`)
    }
 
   return (
@@ -19,7 +19,7 @@ const Item = ({items}) => {
        <div className="card-body">
           <h5 className="card-title">{item.title}</h5>
           <p>{item.resumen}</p>
-          <h6>{item.price}</h6>
+          <h6>${item.price}</h6>
           <ItemCount stock={item.stock} initial={1} onAdd={onAdd} />
           <Link to={`/ItemDetailContainer/${item.id}`}  type='button' className='btn btn-primary my-1' > Detalle </Link>         
        </div>
