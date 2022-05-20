@@ -7,6 +7,8 @@ const ItemDetail = ({producto}) => {
 
   const onAdd = (count) => {
     console.log(`SELECCIONASTE ${count}`)
+    
+    
   }
 
   return (
